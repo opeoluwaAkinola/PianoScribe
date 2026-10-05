@@ -1,0 +1,16 @@
+# Core backend (API, worker, audio analysis, notation)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+sqlalchemy>=2.0
+pydantic>=2.7
+pydantic-settings>=2.3
+numpy>=1.26
+scipy>=1.12
+scikit-learn>=1.4
+librosa>=0.10
+soundfile>=0.12
+imageio-ffmpeg>=0.5   # bundled ffmpeg binary (used when ffmpeg isn't on PATH)
+mido>=1.3
+music21>=9.1
+certifi

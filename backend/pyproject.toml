@@ -1,0 +1,21 @@
+[project]
+name = "pianoscribe-backend"
+version = "0.1.0"
+description = "PianoScribe AI – personal piano transcription backend"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP"]
+ignore = ["B008"]  # FastAPI's Depends()/File() defaults
+
+[tool.ruff.lint.isort]
+force-single-line = false
+split-on-trailing-comma = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

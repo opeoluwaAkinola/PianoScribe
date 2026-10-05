@@ -1,0 +1,6 @@
+# AI transcription engine: ByteDance high-resolution piano transcription (PyTorch).
+# ~1 GB of packages; the 165 MB model checkpoint downloads on first use or via
+# `python -m app.cli download-models`.
+torch>=2.2
+piano_transcription_inference>=0.0.6
+audioread   # imported by piano_transcription_inference (newer librosa no longer pulls it in)
