@@ -2,6 +2,7 @@
   "name": "pianoscribe-frontend",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev -p ${WEB_PORT:-3456}",
     "build": "next build",

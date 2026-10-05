@@ -216,3 +216,11 @@ Not built (by design), but the seams are there: storage is behind `services/stor
 behind `services/jobs.py` (swap for Redis/RQ/Celery), engines behind `transcription/registry.py`, and the database URL
 is configurable (Postgres). Auth and per-user ownership would be added as a `user_id` on `Recording` plus an API
 dependency.
+
+## License
+
+[MIT](LICENSE) © 2026 Opeoluwa Richard Akinola.
+
+The AI model is not included in this repository: the ByteDance piano transcription checkpoint is downloaded from its
+official source by `setup.sh` and is covered by its own licence, as are the third-party packages listed in
+`backend/requirements*.txt` and `frontend/package.json`.
